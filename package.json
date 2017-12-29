@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "nodemon ./bin/www",
     "static": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "jslint": "eslint public/js",
+    "csslint": "stylelint public/scss"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
