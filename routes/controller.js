@@ -4,7 +4,7 @@ const testModel = require(`./model`);
 
 exports.index = (req, res, next) => {
     let params = {
-        name: '李孟想'
+        name: '图'
     };
 
     testModel.index(params).then((result) => {

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon ./bin/www",
     "static": "webpack",
-    "watch": "webpack -w",
+    "watch": "webpack --progress -w",
     "jslint": "eslint public/js",
     "csslint": "stylelint public/scss"
   },
@@ -13,6 +13,7 @@
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "echarts": "^3.8.5",
     "express": "~4.15.5",
     "hbs": "~4.0.1",
     "lodash": "^4.17.4",
