@@ -1,14 +1,17 @@
 let $ = require('jquery');
+let params = {
+    name: 'index来的'
+};
 
-console.log('index');
+require('./common')(params);
 
 let testObj = {
     init: function () {
         this.list();
-        console.log('back!!!12121212121212');
+        console.log('indexjs-init');
     },
     list: function () {
-        console.log('list');
+        console.log('indexjs-list');
     }
 };
 

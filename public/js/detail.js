@@ -1,2 +1,5 @@
-require('./common');
-console.log('detail');
+let params = {
+    name: 'detail来的'
+};
+
+require('./common')(params);
