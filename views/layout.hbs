@@ -2,13 +2,11 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/build/css/index.css' />
-    <link rel='stylesheet' href='/build/css/detail.css' />
-    <script src="/build/js/index.js"></script>
-    <script src="/build/js/detail.js"></script>
+    <link rel='stylesheet' href='/build/css/{{page}}.css' />
+    <script src="/build/js/{{page}}.js"></script>
   </head>
   <body>
+    <h1>公共layout</h1>
     {{{body}}}
-    <div id="draw-main"></div>
   </body>
 </html>

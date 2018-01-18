@@ -29,7 +29,7 @@ exports.index = (params) => {
             title: ''
         };
 
-        resu.title = result[0].data[0].data[0].title + result[1].data[0].data[0].title;
+        resu.title = result[0].data[0].data[0].title + result[1].data[0].data[0].title + params.name;
         return resu;
     });
 };

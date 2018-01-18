@@ -8,8 +8,8 @@ class Http extends baseClass {
     constructor () {
         super();
         this.haha = '';
-        this.test();
-        console.log(this.tips);
+        // this.test();
+        // console.log(this.tips);
     }
 
     get (data) {

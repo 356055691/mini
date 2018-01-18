@@ -36,16 +36,9 @@ module.exports = {
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
                 use: [{
-                    loader: 'css-loader',
-                    options: {
-                        importLoaders: 1,
-                        sourceMap: true
-                    }
+                    loader: 'css-loader'
                 }, {
-                    loader: 'sass-loader',
-                    options: {
-                        sourceMap: true
-                    }
+                    loader: 'sass-loader'
                 }]
             })
         }]
@@ -56,17 +49,17 @@ module.exports = {
                 return getPath('../css/[name]').replace('.scss', '.css');
             },
             allChunks: true
-        }),
-        new UglifyJsPlugin({
-            parallel: true,
-            sourceMap: true,
-            uglifyOptions: {
-                compress: {
-                    warnings: false
-                },
-                comments: false
-            }
         })
+        // new UglifyJsPlugin({
+        //     parallel: true,
+        //     sourceMap: true,
+        //     uglifyOptions: {
+        //         compress: {
+        //             warnings: false
+        //         },
+        //         comments: false
+        //     }
+        // })
     ]
 };
 
